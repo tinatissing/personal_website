@@ -1,0 +1,479 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;	
+}
+
+#maingrid {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1.5fr;
+	grid-gap: 10px;
+	margin: 5px;	
+}
+
+body {
+	background-color: #E2E2E2;
+	font-size: 20px;;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	color: #604181;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	padding: 0 10 0 0;
+	font-size: 1.5em;
+}
+
+h3 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.1em;
+	padding: 10px;
+}
+
+#menuToggle input {
+	display: none;
+}
+
+nav {
+	font-family: Verdana, Geneva, sans-serif;
+	text-transform: uppercase;
+	background-color: #604181;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+a:hover {
+	color:#AD7DBD;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+figcaption {
+	color: #604181;
+	font-size: 1.5em;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+figure img, .imgLeft {
+	border-bottom: 4px solid #27ae60;	
+	border-right: 4px solid #27ae60;
+}
+
+.imgRight {
+	border-bottom: 4px solid #27ae60;	
+	border-left: 4px solid #27ae60;
+}
+	
+footer {
+	text-align: center;
+	border-top: 3px solid #604181;
+	color: #604181;
+	font-size: 1em;
+	margin: 20px 0px;
+}
+
+p {
+	padding: 15px;
+	font-size: 1em;
+	line-height: 200%;
+	font-family: 'Muli', sans-serif;
+}
+
+#achieve, #achieve2 {
+	font-family: 'Muli', sans-serif;	
+	background-color: #604181;
+	color: #FFF;
+	border-left: 4px solid #27ae60;
+}
+
+#achieve ul li, #achieve ul li {
+	padding: 10px;	
+}
+
+@media screen and (max-width: 599px) {
+
+	body {
+		font-size: 18px;;	
+	}
+	
+	h1, nav, footer, figure, section {
+		grid-column: 1/4;
+	}
+	
+	h1 {
+		grid-row: 1/2;
+		background-color: #E2E2E2;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		padding-top: 10%;
+		padding-left: 14%;
+		font-size: 35px;
+	}
+	
+	a {
+		margin: 0px 3%;
+	}
+	
+	#introP {
+		grid-column: 1/4;
+	}
+	
+	figure {
+		max-width: 100%;
+		margin-top: 30%;
+	}
+	
+	figcaption {
+		text-align: center;	
+	}
+	
+	footer {
+		padding: 0px 0px 0px 10px;
+	}
+
+	
+	h2, p, img {
+		grid-column: 1/4;
+	}
+	
+	h2 {
+		text-align:center;
+		padding: 5px;
+	}
+	
+	section {
+		margin-top: 40%;
+	}
+	
+	.topImg {
+		display: block;	
+	}
+	
+	.btmImg {
+		display: none;	
+	}
+	
+	#achieve, #achieve2 {
+		padding: 20px 20px 20px 40px;
+		line-height: 170%;
+	}
+	
+	h4 {
+		padding: 10px;	
+	}
+	
+	.tablet {
+		display: block;	
+	}
+	
+	.nontab {
+		display: none;	
+	}
+}
+
+@media screen and (min-width: 600px) {
+
+	
+	body {
+		font-size: 20px;
+	}
+	
+	section {
+		grid-column: 2/4;
+		margin-top: 16%;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	nav ul {
+		height: 100%;
+		width: 25%;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		margin-top: auto;
+		background-color: #604181;
+		padding: 12% 0px;
+	}
+	
+	nav ul li {
+		margin: auto;
+	}
+	
+	nav a:nth-child(1) {
+		grid-row: 1/2;		
+	}
+	
+	nav a:nth-child(2) {
+		grid-row: 2/3;		
+	}
+	
+	nav a:nth-child(3) {
+		grid-row: 3/4;		
+	}
+	
+	nav a:nth-child(4) {
+		grid-row: 4/5;		
+	}
+	
+	a:link, a:visited, a:active, a:hover {
+		text-align: center;
+		padding: 20px 0px;
+	}
+	
+	h1 {
+		background-color: #E2E2E2;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		margin-left: 13%;
+		padding: 10px;
+	}
+
+	figure {
+		grid-column: 2/4;
+		width: 100%;
+		margin-top: 20%;
+	}
+	
+	figcaption {
+		text-align: center;	
+	}
+	
+	footer {
+		grid-column: 1/4;
+		margin-left: 25%;	
+	}
+	
+	.imgLeft {
+		float: left;
+	}
+	
+	.imgRight {
+		float: right;	
+	}
+	
+	.imgLeft, .imgRight {
+		max-width: 100%;
+		margin: 10px 0px;	
+	}
+	
+	#introP {
+		grid-column: 2/4;
+		margin: auto;
+	}
+		
+	.topImg {
+		display: block;	
+	}
+	
+	.btmImg {
+		display: none;	
+	}
+
+	.resume {
+		max-width: 100%;
+	}
+	
+	#achieve, #achieve2 {
+		padding: 20px 20px 20px 40px;
+		line-height: 170%;
+	}
+
+	h4 {
+		padding: 10px;	
+	}
+	
+	.tablet {
+		display: block;	
+	}
+	
+	.nontab {
+		display: none;	
+	}
+}
+
+@media screen and (min-width: 900px) {
+
+	body {
+		font-size: 22px;
+	}
+	
+	.listSec {
+		grid-column: 2/4;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr .1fr .1fr;
+	}
+
+	h2 {
+		text-align: center;
+		grid-column:1/4;
+	}
+
+	nav ul {
+		height: 100%;
+		width: 25%;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		padding: 10% 0px;
+		background-color: #604181;
+	}
+	
+	nav ul li {
+		text-align: center;	
+	}
+	
+	nav a:nth-child(1) {
+		grid-row: 1/2;		
+	}
+	
+	nav a:nth-child(2) {
+		grid-row: 2/3;		
+	}
+	
+	nav a:nth-child(3) {
+		grid-row: 3/4;		
+	}
+	
+	nav a:nth-child(4) {
+		grid-row: 4/5;		
+	}
+	
+	a:link, a:visited, a:active, a:hover {
+		text-align: center;
+		padding: 20px 0px;;
+	}
+	
+	h1 {
+		background-color: #E2E2E2;
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		margin-left: 13%;
+		padding: 20px
+	}
+	
+	figure {
+		grid-column: 2/4;
+		max-width: 60%;	
+		margin: auto;
+		margin-top: 15%;
+	}
+	
+	figcaption {
+		text-align: center;	
+	}
+	
+	footer {
+		grid-column: 1/4;
+		margin-left: 25%;	
+	}
+	
+	.imgLeft, .imgRight {
+		width: 50%;
+		grid-column: 1/4;
+		margin: 15px;
+	}
+	
+	.imgLeft {
+		float: left;	
+	}
+	
+	.imgRight {
+		float: right;	
+	}
+	
+	#introP {
+		grid-column: 2/4;
+		margin: auto;
+	}
+	
+	.topImg {
+		display: block;	
+	}
+	
+	.btmImg {
+		display: none;
+	}
+
+	#achieve, .athlete {
+		grid-row: 4/5;
+	}
+	
+	#achieve2, .athlete2 {
+		grid-row: 8/9;
+	}
+	
+	.athlete, .athlete2{
+		grid-column: 1/3;
+	}
+	
+	#achieve, #achieve2 {
+		margin-right: 15px;
+		margin-bottom: 20px;
+	}
+	
+	.bigImg {
+		width: 98%;
+		margin: auto;
+	}
+	
+	.rugby {
+		margin-bottom: 20px;	
+	}
+	
+	p {
+		grid-column: 1/4;
+	}
+	
+	h3 {
+		grid-column: 1/4;	
+	}
+	
+	.resume {
+		width: 100%;
+		padding: 10px 15%;
+	}
+	
+	.sidebar li {
+		font-size: 16px;
+	}
+	
+	section {
+		margin-top: 15%;
+}
